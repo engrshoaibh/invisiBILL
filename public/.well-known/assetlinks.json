@@ -1,0 +1,12 @@
+[
+    {
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.mycompany.invisbill",
+        "sha256_cert_fingerprints": [
+          "60:B8:22:CB:2E:35:45:81:52:81:7B:E3:66:60:07:CC:C6:AA:B3:0E:72:F0:DD:E3:30:48:FE:20:FE:EE:B9:F0"
+        ]
+      }
+    }
+  ]

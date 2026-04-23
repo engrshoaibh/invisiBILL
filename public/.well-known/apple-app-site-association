@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": ["66DWA2U6LH.com.mycompany.invisbill"],
+        "paths": ["/invoice/*"]
+      }
+    ]
+  }
+}
