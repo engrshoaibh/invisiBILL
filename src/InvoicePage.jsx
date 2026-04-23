@@ -22,7 +22,7 @@ export default function InvoicePage() {
       <div style={{ textAlign: 'center', padding: '2rem' }}>
         <h2>Couldn't open the InvisiBILL app</h2>
         <p>Make sure the app is installed on your device.</p>
-        <a href={`invisibill://invoice/${id}`}>Try Again</a>
+        <a href={`invisibill://invisibill/invoice/${id}`}>Try Again</a>
       </div>
     );
   }
