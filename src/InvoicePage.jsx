@@ -8,7 +8,7 @@ export default function InvoicePage() {
   useEffect(() => {
     if (!id) return;
 
-    window.location.href = `invisibill://invoice/${id}`;
+    window.location.href = `invisibill://invisibill/invoice/${id}`;
 
     const timer = setTimeout(() => {
       setShowFallback(true);
