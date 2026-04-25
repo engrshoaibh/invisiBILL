@@ -2,7 +2,20 @@ import { useEffect, useState } from 'react'
 
 export default function ResetPasswordPage() {
   const [showFallback, setShowFallback] = useState(false)
-  const deepLink = 'invisibill://invisibill.com/reset-password'
+  const queryParams = new URLSearchParams(window.location.search)
+  const hashParams = new URLSearchParams(window.location.hash.replace(/^#/, ''))
+
+  const accessToken =
+    hashParams.get('access_token') || queryParams.get('access_token')
+  const type = hashParams.get('type') || queryParams.get('type')
+
+  const deepLinkParams = new URLSearchParams()
+  if (accessToken) deepLinkParams.set('access_token', accessToken)
+  if (type) deepLinkParams.set('type', type)
+
+  const deepLink = `invisibill://invisibill/reset-password${
+    deepLinkParams.toString() ? `?${deepLinkParams.toString()}` : ''
+  }`
 
   useEffect(() => {
     window.location.href = deepLink
