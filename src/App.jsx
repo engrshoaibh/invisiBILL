@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import InvoicePage from './InvoicePage'
+import ResetPasswordPage from './ResetPasswordPage'
 import './App.css'
 
 function Home() {
@@ -16,6 +17,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/invoice/:id" element={<InvoicePage />} />
+      <Route path="/reset-password" element={<ResetPasswordPage />} />
     </Routes>
   )
 }
