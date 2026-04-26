@@ -13,7 +13,7 @@ export default function ResetPasswordPage() {
   if (accessToken) deepLinkParams.set('access_token', accessToken)
   if (type) deepLinkParams.set('type', type)
 
-  const deepLink = `invisibill://invisibill/reset-password${
+  const deepLink = `invisibill://invisibill.com/reset-password${
     deepLinkParams.toString() ? `?${deepLinkParams.toString()}` : ''
   }`
 
